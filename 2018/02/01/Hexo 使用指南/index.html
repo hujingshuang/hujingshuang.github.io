@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="HJS | BLOG">
 <meta property="og:description" content="安装HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-02T14:27:23.535Z">
+<meta property="og:updated_time" content="2018-02-02T15:21:31.133Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 使用指南">
 <meta name="twitter:description" content="安装HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
@@ -389,27 +389,32 @@
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>安装 <strong>Hexo</strong> 完成后，请执行下列命令，<strong>Hexo</strong> 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
 <p>比如：建立了一个文件夹，路径为 <code>D:\Blog</code>，则在 <code>D:-&gt;右键-&gt;Git Bash</code> 在输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init Blog</span><br><span class="line">$ <span class="built_in">cd</span> Blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
 <p>至此，已经 <strong>Hexo</strong> 已经建立好了。 </p>
-<h3 id="默认主题"><a href="#默认主题" class="headerlink" title="默认主题"></a>默认主题</h3><p>在 <strong>Hexo</strong> 中提供了一个默认的 <code>landscape</code> 主题，可以在浏览器中打开: <a href="http://localhost:4000/" target="_blank" rel="noopener"><code>http://localhost:4000/</code></a>。不过在打开之前需要先运行命令，生成静态页面至<code>public/</code>目录；最后，开启预览访问端口（默认端口是 <code>4000</code>）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h3 id="默认主题"><a href="#默认主题" class="headerlink" title="默认主题"></a>默认主题</h3><p>在 <strong>Hexo</strong> 中提供了一个默认的 <code>landscape</code> 主题，可以在浏览器中打开: <a href="http://localhost:4000/" target="_blank" rel="noopener"><code>http://localhost:4000/</code></a>。不过在打开之前需要先运行命令，生成静态页面至 <code>public/</code> 目录；最后，开启预览访问端口（默认端口是 <code>4000</code>）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
 <p>当出现一下信息，表明服务开启，你可以通过 <a href="http://localhost:4000/" target="_blank" rel="noopener"><code>http://localhost:4000/</code></a> 在浏览器中打开。</p>
 <blockquote>
-<p>INFO  Start processing<br><br>INFO  Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>. Press Ctrl+C to stop.</p>
+<p>INFO  Start processing<br>INFO  Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>. Press Ctrl+C to stop.</p>
 </blockquote>
-<h3 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init &lt;blog&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;blog&gt;</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init &lt;blog&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;blog&gt;</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><ol>
-<li>打不开<a href="http://localhost:4000/" target="_blank" rel="noopener"><code>http://localhost:4000/</code></a>？<ul>
+<li><p>打不开 <a href="http://localhost:4000/" target="_blank" rel="noopener"><code>http://localhost:4000/</code></a> ?</p>
+<ul>
 <li>查找原因：<strong>Hexo</strong> 默认的端口 <code>4000</code>，在 <code>cmd</code> 输入 <code>netstat -ano | findstr &quot;4000&quot;</code>，找到 <code>4000</code> 端口在最后一列中所对应的 <strong>PID</strong> 值，然后在 <code>任务管理器 -&gt; 详细信息</code> 中通过 <strong>PID</strong> 发现对应的应用程序，结果是     <code>FoxitProtect.exe</code> (福昕阅读器) 这货，占我端口，耗我青春！</li>
-<li>两种解决办法：<ul>
-<li>换一个端口(如 <code>5000</code> )，执行命令：  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -p 5000</span><br></pre></td></tr></table></figure>
+<li><p>两种解决办法：</p>
+<ul>
+<li><p>换一个端口(如 <code>5000</code> )。执行命令：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -p 5000</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>释放 <code>4000</code> 端口。先结束占用端口的进程，再执行命令:</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
-<pre><code>- 释放 `4000` 端口：先结束占用端口的进程，再执行命令:
-    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-</code></pre><h2 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h2><h3 id="发现主题"><a href="#发现主题" class="headerlink" title="发现主题"></a>发现主题</h3><p>到 <a href="https://hexo.io/themes/" target="_blank" rel="noopener"><strong>Hexo</strong></a> 的官网去浏览，选自己喜欢的主题风格。例如，我的博客主题风格为：<a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank" rel="noopener"><strong><code>hexo-theme-next</code></strong></a>,然后在 <code>D:\Blog</code> 中 <code>右键-&gt;Git Bush</code> 中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/AngryPowman/hexo-theme-prontera.git themes/prontera</span><br></pre></td></tr></table></figure></p>
-<p>或者：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@github.com:AngryPowman/hexo-theme-prontera.git themes/prontera</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h2><h3 id="发现主题"><a href="#发现主题" class="headerlink" title="发现主题"></a>发现主题</h3><p>到 <a href="https://hexo.io/themes/" target="_blank" rel="noopener"><strong>Hexo</strong></a> 的官网去浏览，选自己喜欢的主题风格。例如，我的博客主题风格为：<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener"><strong><code>hexo-theme-next</code></strong></a>,然后在 <code>D:\Blog</code> 中 <code>右键-&gt;Git Bush</code> 中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure></p>
+<p>或者：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@github.com:iissnan/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure></p>
 <p>你可以看到 <code>themes/</code> 目录中多了一个 <code>next</code> 文件夹。</p>
 <h3 id="切换主题-1"><a href="#切换主题-1" class="headerlink" title="切换主题"></a>切换主题</h3><p>在 <code>D:\Blog\</code> 中找到 <code>_config.yml</code> 并打开，修改配置文件。将：</p>
 <blockquote>
@@ -417,9 +422,8 @@
 </blockquote>
 <p>修改为：</p>
 <blockquote>
-<p>theme: prontera</p>
+<p>theme: next</p>
 </blockquote>
-<p>当然，根据该主题风格的安装介绍，需要两个依赖，故执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-renderer-jade --save</span><br><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></p>
 <p>最后，执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo s -p 5000</span><br></pre></td></tr></table></figure></p>
 <h3 id="坑-1"><a href="#坑-1" class="headerlink" title="坑"></a>坑</h3><ol>
 <li>执行 <code>$ hexo g</code> 报一堆错？<ul>
@@ -427,7 +431,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><h3 id="新建-repository"><a href="#新建-repository" class="headerlink" title="新建 repository"></a>新建 repository</h3><p>登录到个人 <code>github</code> 上，新建一个 <code>repository</code>，名字必须是 <code>user_name.github.io</code>，其中 <code>user_name</code> 跟 <code>github</code> 的名字一致。<br>例如，我的 <code>github</code> 地址为 <a href="https://github.com/hujingshuang" target="_blank" rel="noopener"><code>https://github.com/hujingshuang</code></a>，则 <code>repository</code> 名就为<code>hujingshuang.github.io</code>。</p>
+<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><h3 id="新建-repository"><a href="#新建-repository" class="headerlink" title="新建 repository"></a>新建 repository</h3><p>登录到个人 <code>github</code> 上，新建一个 <code>repository</code>，名字必须是 <code>user_name.github.io</code>，其中 <code>user_name</code> 跟 <code>github</code> 的名字一致。<br>例如，我的 <code>github</code> 地址为 <a href="https://github.com/hujingshuang" target="_blank" rel="noopener"><code>https://github.com/hujingshuang</code></a>，则 <code>repository</code> 名就为 <code>hujingshuang.github.io</code>。</p>
 <h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><p>有了之前对配置文件 <code>_config.yml</code> 的修改操作经验，现在要将主题发布到刚才新建的 <code>hujingshuang.github.io</code> 仓库中。<br>对 <code>_config.yml</code> 作如下修改：</p>
 <blockquote>
 <p>deploy:<br>&nbsp;&nbsp;&nbsp;&nbsp;type: git<br>&nbsp;&nbsp;&nbsp;&nbsp;repository: git@github.com:hujingshuang/hujingshuang.github.io.git<br>&nbsp;&nbsp;&nbsp;&nbsp;branch: master</p>
@@ -453,7 +457,7 @@
 </li>
 </ol>
 <hr>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-index --save 		<span class="comment"># 索引生成器</span></span><br><span class="line">$ npm install hexo-generator-archive --save 	<span class="comment"># 归档生成器</span></span><br><span class="line">$ npm install hexo-generator-category --save 	<span class="comment"># 分类生成器</span></span><br><span class="line">$ npm install hexo-generator-tag --save 		<span class="comment"># 标签生成器</span></span><br><span class="line">$ npm install hexo-server --save 				<span class="comment"># 本地服务</span></span><br><span class="line">$ npm install hexo-deployer-git --save 			<span class="comment"># Hexo 通过 git 发布</span></span><br><span class="line">$ npm install hexo-renderer-marked@0.2.7 --save <span class="comment"># 渲染器</span></span><br><span class="line">$ npm install hexo-renderer-stylus@0.3.0 --save <span class="comment"># 渲染器</span></span><br></pre></td></tr></table></figure>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-index --save       <span class="comment"># 索引生成器</span></span><br><span class="line">$ npm install hexo-generator-archive --save     <span class="comment"># 归档生成器</span></span><br><span class="line">$ npm install hexo-generator-category --save    <span class="comment"># 分类生成器</span></span><br><span class="line">$ npm install hexo-generator-tag --save         <span class="comment"># 标签生成器</span></span><br><span class="line">$ npm install hexo-server --save                <span class="comment"># 本地服务</span></span><br><span class="line">$ npm install hexo-deployer-git --save          <span class="comment"># Hexo 通过 git 发布</span></span><br><span class="line">$ npm install hexo-renderer-marked@0.2.7 --save <span class="comment"># 渲染器</span></span><br><span class="line">$ npm install hexo-renderer-stylus@0.3.0 --save <span class="comment"># 渲染器</span></span><br></pre></td></tr></table></figure>
 <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h4><ul>
 <li><code>hexo n &quot;我的博客&quot;</code> == <code>hexo new &quot;我的博客&quot;</code> # 新建文章</li>
 <li><code>hexo p</code> == <code>hexo publish</code></li>
@@ -461,31 +465,10 @@
 <li><code>hexo s</code> == <code>hexo server</code>   # 启动服务预览</li>
 <li><code>hexo d</code> == <code>hexo deploy</code>   # 部署</li>
 </ul>
-<h4 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h4><ul>
-<li><code>hexo server</code> # Hexo 会监视文件变动并自动更新，您无须重启服务器。</li>
-<li><code>hexo server -s</code> # 静态模式</li>
-<li><code>hexo server -p 5000</code> # 更改端口</li>
-<li><p><code>hexo server -i 192.168.1.1</code> # 自定义 IP</p>
-</li>
-<li><p><code>hexo clean</code> # 清除缓存 网页正常情况下可以忽略此条命令</p>
-</li>
-<li><code>hexo g</code> # 生成静态网页</li>
-<li><code>hexo d</code> # 开始部署</li>
-</ul>
-<h4 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h4><ul>
-<li><code>hexo generate</code> # 使用 Hexo 生成静态文件快速而且简单</li>
-<li><code>hexo generate --watch</code> # 监视文件变动</li>
-</ul>
-<h4 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h4><p>这两个命令的作用是相同的</p>
-<ul>
-<li><code>hexo generate --deploy</code></li>
-<li><code>hexo deploy --generate</code></li>
-</ul>
-<p>同上：</p>
-<ul>
-<li><code>hexo server -g</code></li>
-<li><code>hexo deploy -g</code>  </li>
-</ul>
+<h4 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server                  <span class="comment"># Hexo 会监视文件变动并自动更新，您无须重启服务器。</span></span><br><span class="line">$ hexo server -s               <span class="comment"># 静态模式</span></span><br><span class="line">$ hexo server -p 5000          <span class="comment"># 更改端口</span></span><br><span class="line">$ hexo server -i 192.168.1.1   <span class="comment"># 自定义 IP</span></span><br><span class="line"></span><br><span class="line">$ hexo clean                   <span class="comment"># 清除缓存 网页正常情况下可以忽略此条命令</span></span><br><span class="line">$ hexo g                       <span class="comment"># 生成静态网页</span></span><br><span class="line">$ hexo d                       <span class="comment"># 开始部署</span></span><br></pre></td></tr></table></figure>
+<h4 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate                <span class="comment"># 使用 Hexo 生成静态文件快速而且简单</span></span><br><span class="line">$ hexo generate --watch        <span class="comment"># 监视文件变动</span></span><br></pre></td></tr></table></figure>
+<h4 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h4><p>这两个命令的作用是相同的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></p>
+<p>同上：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -g</span><br><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
