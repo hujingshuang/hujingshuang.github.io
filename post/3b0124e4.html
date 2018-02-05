@@ -107,7 +107,7 @@
 <meta name="keywords" content="Hexo,GitHub,博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 使用指南">
-<meta property="og:url" content="http://yoursite.com/2018/02/01/Hexo 使用指南/index.html">
+<meta property="og:url" content="http://yoursite.com/post/3b0124e4.html">
 <meta property="og:site_name" content="HJS | BLOG">
 <meta property="og:description" content="安装HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
 <meta property="og:locale" content="zh-CN">
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/01/Hexo 使用指南/"/>
+  <link rel="canonical" href="http://yoursite.com/post/3b0124e4.html"/>
 
 
 
@@ -293,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/01/Hexo 使用指南/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/3b0124e4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hu Jingshuang">
@@ -354,15 +354,14 @@
           
             
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2018/02/01/Hexo 使用指南/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/02/01/Hexo 使用指南/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/post/3b0124e4.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/post/3b0124e4.html" itemprop="commentsCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -563,7 +562,10 @@
 
   
     <div class="comments" id="comments">
-      <div id="SOHUCS"></div>
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
     </div>
 
   
@@ -866,21 +868,47 @@
 
 
 
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cytrEumMJ';
-      var conf = 'fd7ff3f92fe05462ba918bc5dd63888a';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
 
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'hujingshuang',
+            repo: 'hexocomments',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '3ed90ac39ddb58d22b3e12abfb112b7e201029a3',
+            
+                client_id: '460f3e80d5229454e57d'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
 
 
 
