@@ -100,26 +100,28 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java,值传递,引用传递," />
 
 
-<meta name="description" content="人最宝贵的东西是生命，生命属于人只有一次。一个人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞耻。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="HJS | BLOG">
-<meta property="og:url" content="http://yoursite.com/tags/Hexo/index.html">
+<meta name="description" content="不管 Java 参数的类型是什么，一律传递参数的副本。Java 是值传递语言，传入的是引用副本。在 Java 中，变量分为以下两类：① 对于基本数据类型变量（int、long、double、float、byte、boolean、char），Java 是传值的副本。② 对于一切对象型变量，Java 都是传引用的副本。其实传引用副本的实质就是复制指向地址的指针， 注意的是：String类型也是对象型变">
+<meta name="keywords" content="Java,值传递,引用传递">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 值传递和引用传递">
+<meta property="og:url" content="http://yoursite.com/post/6da0d306.html">
 <meta property="og:site_name" content="HJS | BLOG">
-<meta property="og:description" content="人最宝贵的东西是生命，生命属于人只有一次。一个人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞耻。">
+<meta property="og:description" content="不管 Java 参数的类型是什么，一律传递参数的副本。Java 是值传递语言，传入的是引用副本。在 Java 中，变量分为以下两类：① 对于基本数据类型变量（int、long、double、float、byte、boolean、char），Java 是传值的副本。② 对于一切对象型变量，Java 都是传引用的副本。其实传引用副本的实质就是复制指向地址的指针， 注意的是：String类型也是对象型变">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-07T04:44:30.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HJS | BLOG">
-<meta name="twitter:description" content="人最宝贵的东西是生命，生命属于人只有一次。一个人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞耻。">
+<meta name="twitter:title" content="Java 值传递和引用传递">
+<meta name="twitter:description" content="不管 Java 参数的类型是什么，一律传递参数的副本。Java 是值传递语言，传入的是引用副本。在 Java 中，变量分为以下两类：① 对于基本数据类型变量（int、long、double、float、byte、boolean、char），Java 是传值的副本。② 对于一切对象型变量，Java 都是传引用的副本。其实传引用副本的实质就是复制指向地址的指针， 注意的是：String类型也是对象型变">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Hexo/"/>
+  <link rel="canonical" href="http://yoursite.com/post/6da0d306.html"/>
 
 
 
@@ -128,7 +130,7 @@
     sidebar: "",
   };
 </script>
-  <title>标签: Hexo | HJS | BLOG</title>
+  <title>Java 值传递和引用传递 | HJS | BLOG</title>
   
 
 
@@ -185,7 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -275,58 +277,244 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Hexo<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/6da0d306.html">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hu Jingshuang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HJS | BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/post/3b0124e4.html" itemprop="url">
-              
-                <span itemprop="name">Hexo 使用指南</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Java 值传递和引用传递</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-01T11:49:50+08:00"
-              content="2018-02-01" >
-          02-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T12:10:50+08:00">2018-02-07</time>
+            
 
-    </header>
-  </article>
+            
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/post/6da0d306.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/post/6da0d306.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/post/6da0d306.html" class="leancloud_visitors" data-flag-title="Java 值传递和引用传递">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>不管 Java 参数的类型是什么，一律传递参数的副本。<br>Java 是值传递语言，传入的是引用副本。<br>在 Java 中，变量分为以下两类：<br>① 对于基本数据类型变量（int、long、double、float、byte、boolean、char），Java 是传值的副本。<br>② 对于一切对象型变量，Java 都是传引用的副本。其实传引用副本的实质就是复制指向地址的指针，</p>
+<p>注意的是：String类型也是对象型变量，所以它必然是传引用副本。String类是final类型的，因此不可以继承和修改这个类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">exchange</span><span class="params">(Student first, Student second)</span> </span>&#123;</span><br><span class="line">    first.age = <span class="number">16</span>;</span><br><span class="line">    first.name = <span class="string">"Jack"</span>;</span><br><span class="line"></span><br><span class="line">    Student temp = first;</span><br><span class="line">    first = second;</span><br><span class="line">    scond = temp;</span><br><span class="line"></span><br><span class="line">    System.out.println(arg1.x + <span class="string">", y: "</span> + arg1.y);</span><br><span class="line">    System.out.println(arg2.x + <span class="string">", y: "</span> + arg2.y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Point p1 = <span class="keyword">new</span> Point(<span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">    Point p2 = <span class="keyword">new</span> Point(<span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">    System.out.println(<span class="string">"p1 x: "</span> + p1.x + <span class="string">", y: "</span> + p1.y);</span><br><span class="line">    System.out.println(<span class="string">"p2 x: "</span> + p2.x + <span class="string">", y: "</span> + p2.y);</span><br><span class="line"></span><br><span class="line">    tricky(p1, p2);</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"p1 x: "</span> + p1.x + <span class="string">", y: "</span> + p1.y);</span><br><span class="line">    System.out.println(<span class="string">"p2 x: "</span> + p2.x + <span class="string">", y: "</span> + p2.y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Hu Jingshuang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Hu Jingshuang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/值传递/" rel="tag"># 值传递</a>
+          
+            <a href="/tags/引用传递/" rel="tag"># 引用传递</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/3b0124e4.html" rel="next" title="Hexo 使用指南">
+                <i class="fa fa-chevron-left"></i> Hexo 使用指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/bf1d5210.html" rel="prev" title="二月天">
+                二月天 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -578,6 +766,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.3"></script>
+
+
 
   
 
@@ -624,6 +816,34 @@
       </style>
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'hujingshuang',
+            repo: 'hexocomments',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '3ed90ac39ddb58d22b3e12abfb112b7e201029a3',
+            
+                client_id: '460f3e80d5229454e57d'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
     
 
 
